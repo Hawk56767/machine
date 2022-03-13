@@ -1,4 +1,8 @@
 .heading{
 font-size: 70px; 
-width: 100%;
+width: fit-content;
 font-family: Verdana, Geneva, Tahoma, sans-serif;}
+#bob{
+font-size: 20px;
+width: 50%;
+}
