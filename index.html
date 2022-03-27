@@ -1,55 +1,49 @@
- 
+
 <html>
   <head>
-    <title>Image recognition</title>
+    <title>Sound Identification Web App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
-
-   <link rel="stylesheet" href="style.css">
-  
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
-  <body style="background-color:darksalmon;">
-  <div class="container">
-    
-    <center>
-<h4 class="btn btn-info heading">Image Recognition</h4>
-      <br><br>
+  <body>
+      <center>
+<div class="header_div">
+<h1>Sound Controlled Aliens</h1>
+<p>Make different sounds like clap, flute, and crinkling to see the aliens</p>
+</div>
+<div class="main_div" style="background-color:beige;">
 
-      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
-      <h4 class="btn btn-info" id="bob">Mother</h4>
+  <br>
+<button class="btn btn-info" onclick="startClassification();">Make the Aliens Dance!</button>
+<h3 id="result_label">I can hear - </h3>
+<h4 id="result_confidence">Accuracy - </h3>
 <br>
-<h4 class="btn btn-info" id="bob">Father</h4>
-<br>
-<h4 class="btn btn-info" id="bob">Me</h4>
-<br>
-<h4 class="btn btn-info" id="bob">Sister</h4>
-<br><br>
-      <label>Webcam View - </label>
+<img src="aliens-01.png" id="alien1" width="300" height="300">
+<img src="aliens-02.png" id="alien2" width="300" height="300">
+<img src="aliens-03.png" id="alien3" width="300" height="300">
+<img src="aliens-04.png" id="alien4" width="300" height="300">
+</div>
 
-      <br><br>
-<div id="camera"></div>
-      <br><br>
-<div id="result"></div>
-      <br><br>
-<button onclick="take_snapshot();" class="btn btn-info">Capture Image</button>
-      <br><br>
-<button onclick="check();" class="btn btn-success">Identify Image</button>
-      <p style="font-size: 22px;" id="result_object_name">Object :  </p>
-      <p style="font-size: 22px;" id="result_object_accuracy">Accuracy :  </p>
-    <br><br>
-    
-   
-  </center>
-
-  </div>
+      </center>
+      <br><br><br><br><br><br><br><br><br>
+      <div class="copy_right_footer">
+        <p>Made by Chandan Munnaluri</p>
+        </div>
 <script src="main.js"></script>
-
   </body>
 </html>
 
+
+
+
+
+
+
+
  
+
